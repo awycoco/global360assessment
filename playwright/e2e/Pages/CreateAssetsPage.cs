@@ -1,6 +1,5 @@
 using Microsoft.Playwright;
 using Microsoft.Playwright.Xunit;
-using e2e.Pages;
 using e2e.helpers;
 
 namespace e2e.Pages

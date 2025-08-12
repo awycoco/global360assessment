@@ -1,5 +1,3 @@
-
-
 namespace e2e.helpers
 {
     public static class StringCleaner

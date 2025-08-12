@@ -1,8 +1,5 @@
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using e2e.helpers;
 using e2e.Pages;
-using Microsoft.Playwright;
 using Microsoft.Playwright.Xunit;
 
 namespace e2e.Tests
@@ -12,7 +9,6 @@ namespace e2e.Tests
         [Fact]
         public async Task CanAddAssets()
         {
-
             var loginPage = new LoginPage(Page);
             var assetsPage = new AssetsPage(Page);
             var createAssetPage = new CreateAssetsPage(Page);
@@ -34,9 +30,6 @@ namespace e2e.Tests
             string username = StringCleaner.GetCleanName(assetInfo.CheckOutUser!);
             await assetsPage.ValidateAssetInfo(assetInfo.AssetTag!, assetInfo.Status!, username, assetInfo.Model!, assetInfo.Notes!);
             await assetsPage.ValidateHistory(assetInfo.Model!);
-    
-            await Page.WaitForTimeoutAsync(5000);
-
         }
     }
 

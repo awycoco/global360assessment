@@ -1,12 +1,3 @@
-using Microsoft.Playwright;
-using Microsoft.Playwright.Xunit;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System;
-using e2e.Pages;
-
-
-
 namespace e2e.helpers
 {
     public static class Randomizer
